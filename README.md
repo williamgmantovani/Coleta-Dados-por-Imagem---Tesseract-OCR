@@ -1,5 +1,28 @@
-# Coleta_dados_OCR
-Este Script realiza a leitura da imagem, recorte da imagem, tratamento da imagem, leitura por Tesseract OCR e armazenamento em planilha.
+# Coleta de Dados por Imagem | Tesseract OCR
+pt-br
+
+Este programa realiza:
+ 1. leitura da imagem;
+ 2. recorte da imagem da área a ser lida;
+ 3. tratamento da imagem;
+ 4. leitura por Tesseract OCR (imagem para caracter); e
+ 5. armazenamento de carater em planilha.
+
+São necessários para a execução:
+  1. Uma pasta chamada "img_coleta", onde é adicionada as imagens para coleta de dados;
+  2. Uma arquivo padrão em .xlsx (Excel), chamado "model_bd_coleta.xlsx";
+  3. Arquivo em Python "coleta_dados_usina.py".
+
+## Informação sobre a imagem de coleta
+
+A imagem padrão para este modelo não pode ser apresentada pois não possuimos os direitos de divulgação entretando, a imagem utilizada neste estudo é:
+   1. De um supervisório de automação;
+   2. Possui um tamanho de 1920 x 1080 pixels;
+   3. Formato da imagem em .jpeg;
+   4. Resolução de 92 dpi (horizontal e vertical);
+   5. Intesidade de 24 bit.
+
+## Segue abaixo o roteiro na execução do programa:
 
 A programação desenvolvida, chamada a partir daqui de script, utiliza uma biblioteca chamada Pytesseract e o software Tesseract OCR, que realiza a identificação de caracteres de vários formatos através de reconhecimento óptico. No caso, foi coletado informações da imagem e transformados em caractere e armazenados em uma tabela.
 
@@ -15,4 +38,4 @@ Esses tratamentos de imagens são na ordem: (i) o redimensionamento da imagem (z
 
 Com este tratamento, a imagem tratada é enviada ao software Tessaract OCR para a realizar a melhor conversão em caractere da área definida. Este ciclo é realizado para cada área de cada imagem que possui a informação necessária para a coleta.
 
-Após a descoberta da área da imagem em texto, cada texto é salvo em uma planilha, como apresentado na amostra da Figura 5. Cada linha apresenta uma imagem e cada coluna apresenta a informação coletada de cada imagem, que no total foram de 26 para este estudo.
+Após a descoberta da área da imagem em texto, cada texto é salvo em uma planilha. Cada linha apresenta uma imagem e cada coluna apresenta a informação coletada de cada imagem, que no total foram de 26 para este estudo.
